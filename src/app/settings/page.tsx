@@ -12,6 +12,7 @@ import {
 } from "@/lib/slices/transactionSlice";
 import { useDispatch } from "react-redux";
 import { toast } from "sonner";
+import { resetBudget } from "@/lib/localStorage";
 
 export default function SettingPage() {
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -89,6 +90,7 @@ const handleImport = (e: React.ChangeEvent<HTMLInputElement>) => {
     const confirmed = confirm("Yakin ingin mereset semua data?");
     if (confirmed) {
       localStorage.removeItem("finance_transactions");
+      resetBudget();
       dispatch(resetTransactions());
       toast.success("Data berhasil direset.");
     }

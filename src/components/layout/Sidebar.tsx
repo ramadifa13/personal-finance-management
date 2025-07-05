@@ -12,11 +12,12 @@ import {
   SheetDescription,
 } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
-import { LayoutDashboard, Settings, Menu } from "lucide-react";
+import { LayoutDashboard, Settings, Menu, Banknote } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const navItems = [
   { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
+  { href: "/budget", label: "Budget", icon: Banknote },
   { href: "/settings", label: "Settings", icon: Settings },
 ];
 

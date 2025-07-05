@@ -44,6 +44,7 @@ export const kategoriOptions: Record<TransactionType, string[]> = {
   ],
   pengeluaran: [
     "Makan",
+    "Ongkos",
     "Minum",
     "Transportasi",
     "Belanja",

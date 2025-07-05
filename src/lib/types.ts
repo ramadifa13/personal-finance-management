@@ -36,3 +36,11 @@ export interface Transaction {
   jumlah: number;
 }
 
+export type BudgetSettings = {
+  dateRange?: {
+    from?: Date; 
+    to?: Date;
+  };
+  dailyBudget: number;
+  kategori: string;
+};
